@@ -1,0 +1,5 @@
+a = new A();
+a2 = new B();
+
+a2.val = 3;
+a.val = 4;

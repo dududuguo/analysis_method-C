@@ -1,0 +1,23 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-I/usr/lib/llvm-14/include",
+      "-std=c++14",
+      "-fno-exceptions",
+      "-D_GNU_SOURCE",
+      "-D__STDC_CONSTANT_MACROS",
+      "-D__STDC_FORMAT_MACROS",
+      "-D__STDC_LIMIT_MACROS",
+      "$(llvm-config --cxxflags)",
+      "-c",
+      "${workspaceFolder}/include/readFile.cpp",
+      "-o",
+      "${workspaceFolder}/output_program",
+      "$(llvm-config --ldflags --libs core support)"
+    ],
+    "directory": "${workspaceFolder}",
+    "file": "${workspaceFolder}/include/readFile.cpp",
+    "output": "${workspaceFolder}/include/output_program"
+  }
+]
