@@ -22,7 +22,6 @@ void livenessAnalysis(llvm::Function &F)
     for (auto &[BB, info] : livenessMap)
     {
         llvm::errs() << "BasicBlock: " << BB->getName() << "\n";
-        
     }
 }
 
