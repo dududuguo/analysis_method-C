@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/dudu/FV_SA/static_analysis/build",
-  "command": "/usr/bin/g++ -I/usr/lib/llvm-14/include -I/home/dudu/FV_SA/static_analysis/include -g -std=gnu++17   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o dataFlow_Analysis/Live_Variables/CMakeFiles/analysis_method.dir/livenessAnalysis.cpp.o -c /home/dudu/FV_SA/static_analysis/dataFlow_Analysis/Live_Variables/livenessAnalysis.cpp",
-  "file": "/home/dudu/FV_SA/static_analysis/dataFlow_Analysis/Live_Variables/livenessAnalysis.cpp",
-  "output": "dataFlow_Analysis/Live_Variables/CMakeFiles/analysis_method.dir/livenessAnalysis.cpp.o"
-}
-]

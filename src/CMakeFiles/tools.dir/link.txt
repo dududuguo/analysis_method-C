@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/tools.dir/readFile.cpp.o -o tools 
