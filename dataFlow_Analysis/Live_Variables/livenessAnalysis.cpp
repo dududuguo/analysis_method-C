@@ -5,7 +5,7 @@
 #include <cctype> // for std::isspace
 #include <algorithm>
 #include <stack>
-#include "../../include/MyIRReader.hpp"
+#include "MyIRReader.hpp"
 
 void livenessAnalysis(llvm::Function &F)
 {
@@ -27,19 +27,24 @@ void livenessAnalysis(llvm::Function &F)
 
 int main()
 {
+    std::cout << "Before reading file" << std::endl;
     auto module = MyIR::readFile();
-    if (!module)
-    {
-        return 1;
-    }
+    std::cout << "After reading file" << std::endl;
 
-    for (auto &F : *module)
+    if (module)
     {
-        if (!F.isDeclaration())
+        std::cout << "Before iterating through functions" << std::endl;
+        for (auto &F : *module)
         {
-            livenessAnalysis(F);
+            std::cout << "Function: " << F.getName().str() << std::endl;
+            if (!F.isDeclaration())
+            {
+                std::cout << "Before liveness analysis of function: " << F.getName().str() << std::endl;
+                livenessAnalysis(F);
+                std::cout << "After liveness analysis of function: " << F.getName().str() << std::endl;
+            }
         }
+        std::cout << "After iterating through functions" << std::endl;
     }
-
     return 0;
 }

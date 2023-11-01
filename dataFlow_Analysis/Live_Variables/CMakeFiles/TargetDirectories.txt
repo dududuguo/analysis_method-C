@@ -1,0 +1,7 @@
+/home/dudu/FV_SA/static_analysis/dataFlow_Analysis/Live_Variables/CMakeFiles/intrinsics_gen.dir
+/home/dudu/FV_SA/static_analysis/dataFlow_Analysis/Live_Variables/CMakeFiles/omp_gen.dir
+/home/dudu/FV_SA/static_analysis/dataFlow_Analysis/Live_Variables/CMakeFiles/acc_gen.dir
+/home/dudu/FV_SA/static_analysis/dataFlow_Analysis/Live_Variables/CMakeFiles/clang-tablegen-targets.dir
+/home/dudu/FV_SA/static_analysis/dataFlow_Analysis/Live_Variables/CMakeFiles/Live_Variables.dir
+/home/dudu/FV_SA/static_analysis/dataFlow_Analysis/Live_Variables/CMakeFiles/edit_cache.dir
+/home/dudu/FV_SA/static_analysis/dataFlow_Analysis/Live_Variables/CMakeFiles/rebuild_cache.dir

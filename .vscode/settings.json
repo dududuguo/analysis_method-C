@@ -69,4 +69,5 @@
     "__nullptr": "cpp"
   },
   "java.compile.nullAnalysis.mode": "automatic",
+  "cmake.sourceDirectory": "/home/dudu/FV_SA/static_analysis/dataFlow_Analysis/Live_Variables",
 }

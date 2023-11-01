@@ -5,10 +5,7 @@
       "label": "build my program",
       "type": "shell",
       "command": "/bin/bash",
-      "args": [
-        "-c",
-        "g++ -c  include/readFile.cpp  $(llvm-config --cxxflags) -o include/readFile.o && g++ -c dataFlow_Analysis/Live_Variables/setBB.cpp $(llvm-config --cxxflags) -o dataFlow_Analysis/Live_Variables/setBB.o && g++  include/readFile.o dataFlow_Analysis/Live_Variables/setBB.o -o output_program  $(llvm-config --ldflags --libs core support)"
-      ],
+      "args": [],
       "group": {
         "kind": "build",
         "isDefault": true

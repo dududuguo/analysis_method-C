@@ -82,6 +82,7 @@ int main()
 
     std::string line;
     int count = 1;
+    std::cout<<"Available expression: "<<std::endl;
 
     while (std::getline(file, line))
     {
