@@ -12,16 +12,21 @@
 
 #include <set>
 #include <map>
+#include <filesystem>
+#include <iostream>
 
 namespace MyIR
 {
     std::unique_ptr<llvm::Module, std::default_delete<llvm::Module>> readFile()
     {   
+        std::filesystem::path currentPath = std::filesystem::current_path();
+        std::cout << "Current path: " << currentPath << std::endl;
+
         // Make it static here
         // Make sure that llvm::LLVMContext is at least as old as the llvm::Module you're using.
         static llvm::LLVMContext context; 
         llvm::SMDiagnostic error;
-        auto buffer = llvm::MemoryBuffer::getFile("/home/dudu/FV_SA/static_analysis/src/test.ll");
+        auto buffer = llvm::MemoryBuffer::getFile("../../test/test.ll");
 
         if (!buffer) {
             llvm::errs() << "Failed to load IR file.\n";
